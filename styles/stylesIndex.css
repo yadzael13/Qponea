@@ -1,0 +1,439 @@
+@font-face {
+  font-family: Hero;
+  src: url('../fonts/Hero-Bold.otf'),
+    url('../fonts/Hero-Light.otf'),
+    url('../fonts/Hero-Regular.otf');
+}
+
+body * a{text-decoration: none;}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+height: auto;
+
+font-family: "Hero";
+
+}
+.menu--on{
+  position: fixed;
+  transform: scale(1);
+transition: all 1s;
+}
+.menu--on--hide{
+
+
+
+transform: scale(0);
+
+}
+#search--button{
+  position: relative;
+  margin-left: 90px;
+}
+header{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 5;
+}
+header div img{
+  width:4rem;
+  height: 4rem;
+  position: relative;
+  margin: 10px 0 0 20px;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+header div img:hover{
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px black);
+  transition: 0.3s;
+}
+
+/* Menu aside */
+#menu--off{
+  filter: invert(84%) sepia(42%) saturate(252%) hue-rotate(344deg) brightness(103%) contrast(102%);
+}
+.header--menu--aside{
+  position:fixed;
+  margin: 10px 0 0 0;
+
+  width: 35vh;
+  height: 80vh;
+  transition: transform .5s;
+   transform: translateX(-100rem);
+   z-index: 13;
+}
+.header--menu--aside--on{
+  transform: translateX(0);
+}
+.header--menu--aside::before{
+  content: '';
+  margin: 0;
+  padding: 0;
+   display: inline-block;
+  width: 35vh;
+  height: inherit;
+  position: fixed;
+  opacity: 80%;
+  border-radius: 0 20px 20px 0;
+
+background: -webkit-linear-gradient(to left, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+box-shadow: 5px 5px 30px #a40505;
+z-index: -1;
+}
+.header--menu--aside ul{
+  padding: 0;
+  margin: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-content: center;
+  width: 70%;
+  height: 90%;
+}
+.header--menu--aside ul li{
+   width: 100%;
+  height: 10%;
+  margin: auto;
+color: white;
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
+
+ align-items: center;
+  cursor:pointer;
+transition: all .3s;
+
+}
+
+.header--menu--aside ul li:before{
+  width: 13rem;
+ height: 10%;
+  content: "";
+  display: inline-block;
+  position: absolute;
+margin: auto;
+  padding:0;
+  border-radius: 10px 10px 10px 10px;
+  z-index: -1;
+  background-color: none;
+  transition: all .3s;
+}
+.header--menu--aside ul li:hover:before{
+  cursor: pointer;
+  background-color: rgba(164, 5, 5, .5);
+}
+.header--menu--aside ul li i{
+  color:#fceabb;
+  margin-left: 1.5rem;
+}
+
+.menu--aside--cupons{
+max-width: auto;
+ height: 40vh;
+background-color:rgba(164, 5, 5, .5);
+  position: fixed;
+border-radius: 0 15px 15px 15px;
+  margin:13em 0 0 13.5em;
+
+opacity: 0;
+visibility: hidden;
+  padding: 0;
+  display:flex;
+
+z-index: 14;
+transition: all .5s;
+}
+.menu--aside--cupons ul{
+  width: 35vh;
+  height: 90%;
+  margin: auto;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+  .menu--aside--cupons ul li{
+
+margin: 0 2em 0 0;
+
+  width: 75%;
+  text-align: center;
+}
+
+/* Mostrar, ocultar menu cupones  */
+.menu--aside--cupons--on{
+  transition: .5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Fin Mostrar, ocultar menu cupones  */
+
+#menu--hide{
+  filter: invert(30%) sepia(23%) saturate(6565%) hue-rotate(344deg) brightness(97%) contrast(85%);
+  opacity: 80%;
+}
+#menu--hide:hover{
+  opacity: 50%;
+}
+
+/* Fin de Menu aside */
+.header--menu--qponea{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+/* Barra de busqueda */
+.header--busqueda--qponea{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+}
+.search--div{
+  display: flex;
+  height: 5rem;
+}
+.search--button{
+  position: relative;
+  margin-left: 6em;
+  transform: scale(1);
+  transition: transform .4s;
+}
+.search--button--onclick{
+  transform: scale(0.6);
+}
+.search--input{
+  width: 60vh;
+  height: 5.5vh;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  border-radius: 0 10px 10px 0;
+ font: 500 1rem "Hero";
+ text-align: center;
+ color:black;
+  background-color: rgba(147, 41, 30, .4);
+  box-shadow: 0px 5px 10px rgba(164, 5, 5, .5 );
+  border-style: none;
+  outline: none;
+transform: scale(0) translateX(-200px);
+
+}
+.search--input::placeholder{
+  color:white;
+  font-size: 1rem;
+}
+.search--input--onclick{
+  transform: scale(1) translateX(0px);
+     transition: transform .5s;
+}
+
+/* Fin de Barra de busqueda */
+/* Menu usuario y carrito  */
+#login--active{
+  margin-right: 5em;
+}
+ #carr--active{
+  position: fixed;
+
+  padding: 0;
+width: 60px; height:60px;
+right: 1em;
+}
+/* Menu usuario y carrito  */
+/* main Qponea */
+#main--qponea{
+  width: 100%;
+  padding: 0;
+  height: auto;
+  background: -webkit-linear-gradient(to top, rgba(229, 57, 53, 0.65), rgba(255,255,255, 0.2)), url(../images/portada.jpg);
+  background: linear-gradient(to top, rgba(229, 57, 53, 0.65), rgba(255,255,255, 0.2)), url(../images/portada.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1;
+
+}
+#main--qponea svg{
+  position: relative;
+  top:10px;
+  margin: auto;
+  padding: 0;
+}
+.main--qponea--content{
+  width: 100%;
+  height:20em;
+margin: 22vh 0 20px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+}
+.qponeaImage{
+  position: relative;
+  width: 450px;
+}
+.main--aside{
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.main--aside h2{
+  position: relative;
+  color:white;
+  margin: auto;
+  text-shadow: 5px 5px 3px #929292;
+  text-align: right;
+  align-self: center;
+  width: 95%;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.main--aside--button{
+  width: 70%;
+  height: 3rem;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
+  color:white;
+
+  font-family: "Hero";
+  font-size: 1.5rem;
+  cursor:pointer;
+align-self: center;
+border-style: hidden;
+  box-shadow: 0px 5px 10px #a40505;
+
+background: -webkit-linear-gradient(to top, #e35d5b, rgba(229, 57, 53, .7));
+background: linear-gradient(to top, #e35d5b, rgba(229, 57, 53, .7));
+  transition: transform 1s;
+}
+.main--aside--button:hover{
+transform: scale(1.1);
+}
+/* Fin  main Qponea */
+/* waves */
+
+
+
+
+/* Banner de descuentos */
+#section--banner{
+  position: relative;
+  width: 100%;
+background-color: white;
+margin: 60vh 0px 0px 0px;
+z-index: 3;
+
+}
+
+.contenedor1 {
+  position: relative;
+  width: 100%;
+  height: 20em;
+
+
+}
+/*Descubre los descuentos*/
+ h2 {
+  margin: 20px auto;
+
+  width: 100%;
+  height: auto;
+  font-family: Hero;
+  -webkit-text-shadow: 20px 8px 30px black;
+  -moz-text-shadow: 20px 8px 30px black;
+  -ms-text-shadow: 20px 8px 30px black;
+  -o-text-shadow: 20px 8px 30px black;
+  text-shadow: 20px 8px 30px black;
+  color: crimson;
+  font-size: 3em;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+
+}
+
+.banner_descuentos {
+  width: 100%;
+  height: 95%;
+  position: relative;
+  margin: auto;
+  background-size: 100% 100%;
+  z-index: 13;
+  animation: bannerDesc 15s infinite;
+  animation-direction: normal;
+  z-index: 9000;
+}
+
+/*Animaciones de banner*/
+@keyframes bannerDesc {
+  0%, 31% {
+    background-image: url(../images/bannerDesc/bannDesc1.png);
+    opacity: 1;
+    -webkit-box-shadow: box-shadow: 10px 20px 30px grey;
+    -moz-box-shadow: box-shadow: 10px 20px 30px grey;
+    box-shadow: 10px 20px 30px grey;
+  }
+
+  32%, 33% {
+    opacity: 0.1;
+  }
+
+  34%, 64% {
+    background-image: url(../images/bannerDesc/bannDesc2.png);
+    opacity: 1;
+    -webkit-box-shadow: box-shadow: 10px 20px 30px grey;
+    -moz-box-shadow: box-shadow: 10px 20px 30px grey;
+    box-shadow: 10px 20px 30px grey;
+  }
+
+  65%, 66% {
+    opacity: 0.1;
+  }
+
+  67%, 98% {
+    background-image: url(../images/bannerDesc/bannDesc3.png);
+    opacity: 1;
+    -webkit-box-shadow: box-shadow: 10px 20px 30px grey;
+    -moz-box-shadow: box-shadow: 10px 20px 30px grey;
+    box-shadow: 10px 20px 30px grey;
+  }
+
+  99%, 100% {
+    opacity: 0.1;
+  }
+}
+
+
+
+/* Fin de banner de descuentso */
+
+
+/* waves */
+.waveRed{
+  margin: 0;
+  padding: 0;
+}
