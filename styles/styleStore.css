@@ -2,7 +2,7 @@
   width: 100%;
   height:50%;
   padding: 0;
-  margin:12rem 0 0 0;
+  margin:10rem 0 0 0;
   position: relative;
   display: grid;
   grid-template-rows: 0% 80%;
@@ -11,12 +11,18 @@
 
 }
 #carrito--main--buttons h2{
+  width: auto;
+  height: 3rem;
+  position: relative;
+  margin-top: 2rem;
   grid-area:carritoH2;
 }
 .carrito--main--waves{
+
   height: auto;
   grid-area: carrito--main;
 }
+
 .waves--carrito{
   width: 100%;
   position: relative;
@@ -32,12 +38,14 @@
   width: 90%;
 
   margin: auto;
+  position: relative;
+  bottom: 3rem;
   padding: 0;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-start;
   grid-area: carrito--main;
 }
 .carrito--buttons--icons{
@@ -49,19 +57,20 @@
   height: 90px;
   border-radius: 100%;
 margin: auto;
-border-width: 13px;
+border-width: 10px;
 
 display: flex;
 
 align-items: center;
 padding:0;
   border-style: double;
+  border-color: white;
   background-color: #ED213A;
 }
 .carrito--buttons--icons div:hover{
   cursor:pointer;
   background-color: white;
-  filter: invert(84%) sepia(42%) saturate(252%) hue-rotate(344deg) brightness(103%) contrast(102%);
+  filter: invert(1%) sepia(42%) saturate(252%) hue-rotate(344deg) brightness(103%) contrast(102%);
 
 }
 .carrito--buttons--icons img{

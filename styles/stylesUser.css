@@ -6,7 +6,7 @@
   height: 100%;
   bottom: 0rem;
   position: fixed;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.9);
   z-index: -3;
   opacity: 0;
   visibility: hidden;
@@ -68,7 +68,11 @@ transition-delay: .4s;
  margin: 0 auto 150px auto;
   border-radius: 10px 10px 10px 10px;
 
-  background-color: rgba(0,0,0,.6);
+  /* background-color: rgba(0,0,0,.6); */
+
+  background-color: rgba(147, 41, 30, .4);
+
+  /* box-shadow: 5px 5px 30px #a40505; */
   display: grid;
   grid-template-rows: 1fr 8fr;
 z-index: 12;
@@ -373,12 +377,13 @@ box-shadow: inset 1em 1em #9AFF67  ;
 
 /* Boton de activación */
 .user--login--activate{
-  margin: 10px 0 0 0;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+
   width: 50%;
   display: flex;
   flex-direction:flex-end;
-  
+
   justify-content:flex-end;
 
 }

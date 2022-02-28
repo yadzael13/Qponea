@@ -10,6 +10,7 @@ window.onload = function() {
 
 //ventanas
 const principalUser = document.querySelector(".section--user");
+const body = document.querySelector("body");
 const welcomeUser = document.querySelector(".section--user--");
 const mailUser = document.querySelector(".section--user--mail");
 const logginUser = document.querySelector(".section--user--login");
@@ -66,6 +67,7 @@ if (searchButton.classList.contains("search--button--onclick")) {
 function mostrarUserSection(){
   backBlack.classList.toggle("bckgrndBlack--on");
   principalUser.classList.toggle("section--user--on");
+  body.classList.add("no_scroll");
 }
 
 function goToLoggin(){
@@ -86,6 +88,7 @@ function close(){
 principalUser.classList.toggle("section--user--on");
 registerp.classList.remove("register-p-hide");
 iconsRegister.classList.remove("styleicons-show");
+body.classList.remove("no_scroll");
 back();
 }
 function back(){
