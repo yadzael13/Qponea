@@ -10,7 +10,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-y: scroll;
- scrollbar-color: yellow #800080;
+ scrollbar-color: white #800080;
      scrollbar-width: 10px;
   width: 100%;
 height: auto;
@@ -59,8 +59,8 @@ header{
   z-index: 5;
 }
 header div img{
-  width:4rem;
-  height: 4rem;
+  width:3rem;
+  height: 3rem;
   position: relative;
   margin: 10px 0 0 20px;
   padding: 0;
@@ -78,7 +78,7 @@ header div img:hover{
   padding: 0;
   width: 15rem;
   height: 6rem;
-  filter: drop-shadow(5px 5px 5px black);
+
 }
 /* Menu aside */
 #menu--off{
@@ -274,13 +274,13 @@ transform: scale(0) translateX(-200px);
 /* Fin de Barra de busqueda */
 /* Menu usuario y carrito  */
 #login--active{
-  margin-right: 6em;
+  margin-right: 5em;
 }
  #carr--active{
   position: fixed;
 
   padding: 0;
-width: 60px; height:60px;
+width: 3em; height:3em;
 right: 1em;
 }
 /* Menu usuario y carrito  */
@@ -293,13 +293,13 @@ right: 1em;
   background: linear-gradient(to top, rgba(229, 57, 53, 0.65), rgba(255,255,255, 0.2)), url(../images/backMobile.gif); */
 
 
-  background: -webkit-linear-gradient(to top, rgba(229, 57, 53, 0.65), rgba(255,255,255, 0.2)), url(../images/portada.jpg);
-  background: linear-gradient(to top, rgba(229, 57, 53, 0.65), rgba(255,255,255, 0.2)), url(../images/portada.jpg);
+  background: -webkit-linear-gradient(to top, rgba(229, 57, 53, 0.9), rgba(255,255,255, 0.4)), url(../images/portada.jpg);
+  background: linear-gradient(to top, rgba(229, 57, 53, 0.9), rgba(255,255,255, 0.4)), url(../images/portada.jpg);
 
 
     background-attachment:scroll;
     background-size: 100% 100%;
-    background-color:rgba(229, 57, 53, 0.65);
+    background-color:rgba(229, 57, 53, 0.2);
     margin: auto;
   background-repeat: no-repeat;
     position: absolute;
@@ -344,7 +344,7 @@ margin: 7rem auto auto auto;
   position: relative;
   color:white;
   margin: auto;
-  text-shadow: 5px 5px 3px #929292;
+
   text-align: center;
   align-self: center;
   width: 85%;
@@ -403,9 +403,9 @@ z-index: 3;
   margin: auto;
   padding: 0;
   position: relative;
-  top:60px;
-  width: 50%;
-  height: 20em;
+
+  width: 70%;
+  height: 25em;
 display: flex;
 align-items: flex-start;
 }
@@ -413,7 +413,7 @@ align-items: flex-start;
   padding: 0;
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 330px;
   margin: auto;
 }
 /*Descubre los descuentos*/
@@ -437,7 +437,7 @@ align-items: flex-start;
   height: 95%;
   position: relative;
   margin: auto;
-  bottom:16rem;
+  bottom:22rem;
   background-size: 100% 100%;
   z-index: 13;
   animation: bannerDesc 15s infinite;
