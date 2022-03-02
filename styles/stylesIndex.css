@@ -293,8 +293,11 @@ right: 1em;
   background: linear-gradient(to top, rgba(229, 57, 53, 0.65), rgba(255,255,255, 0.2)), url(../images/backMobile.gif); */
 
 
-  background: -webkit-linear-gradient(to top, rgba(229, 57, 53, 0.9), rgba(255,255,255, 0.4)), url(../images/portada.jpg);
-  background: linear-gradient(to top, rgba(229, 57, 53, 0.9), rgba(255,255,255, 0.4)), url(../images/portada.jpg);
+  /* background: -webkit-linear-gradient(to top, rgba(229, 57, 53, 0.9), rgba(255,255,255, 0.4)), url(../images/portada.jpg);
+  background: linear-gradient(to top, rgba(229, 57, 53, 0.9), rgba(255,255,255, 0.4)), url(../images/portada.jpg); */
+
+  background: -webkit-linear-gradient(to top, rgba(145, 8, 8, 0.7), rgba(217,16,16, 0.5)), url(../images/portada.jpg);
+  background: linear-gradient(to top, rgba(145, 8, 8, 0.7), rgba(217,16,16, 0.5)), url(../images/portada.jpg);
 
 
     background-attachment:scroll;
